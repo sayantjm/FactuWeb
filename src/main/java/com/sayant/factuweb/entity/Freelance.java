@@ -1,5 +1,6 @@
 package com.sayant.factuweb.entity;
 
+import lombok.Data;
 import org.hibernate.annotations.UpdateTimestamp;
 import org.springframework.data.annotation.CreatedDate;
 
@@ -8,6 +9,7 @@ import java.time.LocalDateTime;
 
 @Entity
 @Table(name="Freelance")
+@Data
 public class Freelance {
     @Id
     @GeneratedValue
@@ -44,78 +46,6 @@ public class Freelance {
         this.city = city;
         this.state = state;
         this.phone = phone;
-        this.mobile = mobile;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getDNI() {
-        return DNI;
-    }
-
-    public void setDNI(String CIF) {
-        this.DNI = DNI;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
-    public int getCodPostal() {
-        return codPostal;
-    }
-
-    public void setCodPostal(int codPostal) {
-        this.codPostal = codPostal;
-    }
-
-    public String getCity() {
-        return city;
-    }
-
-    public void setCity(String city) {
-        this.city = city;
-    }
-
-    public String getState() {
-        return state;
-    }
-
-    public void setState(String state) {
-        this.state = state;
-    }
-
-    public String getPhone() {
-        return phone;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone;
-    }
-
-    public String getMobile() {
-        return mobile;
-    }
-
-    public void setMobile(String mobile) {
         this.mobile = mobile;
     }
 
