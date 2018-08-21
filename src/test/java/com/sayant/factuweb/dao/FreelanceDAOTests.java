@@ -1,4 +1,4 @@
-package com.sayant.factuweb;
+package com.sayant.factuweb.dao;
 
 import com.sayant.factuweb.dao.FreelanceDAO;
 import com.sayant.factuweb.entity.Freelance;

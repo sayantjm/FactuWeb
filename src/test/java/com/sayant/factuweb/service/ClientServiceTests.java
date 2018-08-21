@@ -1,4 +1,4 @@
-package com.sayant.factuweb;
+package com.sayant.factuweb.service;
 
 import com.sayant.factuweb.dao.ClientDAO;
 import com.sayant.factuweb.entity.Client;
